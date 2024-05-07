@@ -51,4 +51,27 @@ fun main(args:Array<String>){
 
     println(halfPricedVegetableItems)
 
+    /*
+       Create a list of each unitPrice multiplied by 2 where the original unitPrice is greater than 3
+     */
+
+    val newPrices = groceries2.filter {
+        it.unitPrice > 3.0
+    }.map {
+        it.unitPrice * 2.0
+    }
+
+    println(newPrices)
+
+
+
+
+
+
+
+
+
+
+
+
 }
